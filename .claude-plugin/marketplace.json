@@ -1,0 +1,17 @@
+{
+  "name": "superlurk-release",
+  "owner": {
+    "name": "Scrapegg Software Private Limited",
+    "email": "support@superlurk.com"
+  },
+  "metadata": {
+    "description": "Superlurk integration-only release candidates"
+  },
+  "plugins": [
+    {
+      "name": "superlurk",
+      "source": "./plugins/claude-code",
+      "version": "0.3.3"
+    }
+  ]
+}

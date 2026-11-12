@@ -1,0 +1,20 @@
+{
+  "name": "superlurk",
+  "owner": {
+    "name": "Scrapegg Software Private Limited",
+    "email": "support@superlurk.com"
+  },
+  "metadata": {
+    "description": "Superlurk plugins for Claude Code: priced social search across 25 networks."
+  },
+  "plugins": [
+    {
+      "name": "superlurk",
+      "source": "./",
+      "description": "Search 25 networks, including TikTok, Instagram, YouTube, Reddit and X, with the price shown before every search.",
+      "version": "0.3.3",
+      "category": "productivity",
+      "homepage": "https://superlurk.com/integrations/claude-code"
+    }
+  ]
+}

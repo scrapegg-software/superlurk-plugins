@@ -1,0 +1,20 @@
+{
+  "name": "superlurk-release",
+  "interface": {
+    "displayName": "Superlurk release candidates"
+  },
+  "plugins": [
+    {
+      "name": "superlurk",
+      "source": {
+        "source": "local",
+        "path": "./plugins/codex"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

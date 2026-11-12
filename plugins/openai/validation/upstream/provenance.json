@@ -1,0 +1,20 @@
+{
+  "retrieved_at": "2026-11-11T10:06:24.995596+00:00",
+  "schemas": [
+    {
+      "file": "plugin.schema.json",
+      "url": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+      "sha256": "0a4aad95ce337878ad38802ebf0daa3fde76abe3f65400c86bcbb1ec0b3ab883"
+    },
+    {
+      "file": "mcp.schema.json",
+      "url": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+      "sha256": "6539175bfcdf43085855183e86da40ea94b166547a72b47ae9a0a390516d3acb"
+    }
+  ],
+  "openai_documentation": [
+    "https://developers.openai.com/plugins/build/plugins",
+    "https://developers.openai.com/plugins/deploy/submission"
+  ],
+  "limitation": "The upstream MCP 1.0.0 schema has additionalProperties:false on HTTP server entries and does not allow the extensions object currently documented by OpenAI. Validate the unmodified portable projection with this schema and the documented OpenAI extension separately; this is not a claim of full upstream MCP schema acceptance."
+}

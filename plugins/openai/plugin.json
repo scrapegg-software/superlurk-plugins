@@ -1,0 +1,117 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "superlurk",
+  "version": "0.3.3",
+  "description": "Research public social posts, accounts, comments and trends with Superlurk. Discover searches, review a quote, and browse your saved results.",
+  "author": {
+    "name": "Scrapegg Software Private Limited",
+    "email": "support@superlurk.com",
+    "url": "https://superlurk.com"
+  },
+  "homepage": "https://superlurk.com/integrations/chatgpt",
+  "repository": "https://github.com/scrapegg-software/superlurk-plugins",
+  "license": "UNLICENSED",
+  "keywords": [
+    "social-search",
+    "research",
+    "tiktok",
+    "reddit",
+    "instagram",
+    "youtube",
+    "bluesky",
+    "mcp"
+  ],
+  "extensions": {
+    "com.openai": {
+      "onboardingSkill": "./skills/setup/SKILL.md",
+      "interface": {
+        "displayName": "Superlurk",
+        "shortDescription": "Social search, in your chat",
+        "longDescription": "Research public social posts, accounts, comments and trends from ChatGPT and Codex with your Superlurk account. Discover currently available searches, review their required inputs, inspect a quote, then approve a run. Native sources return the details their network provides; web sources return public page titles, links and snippets without native engagement metrics. Bulk lookup is offered for eligible account, link and ID searches. Browse saved results and available pages, and request contextual follow-up searches when offered. Your search history and private results are shared with the Superlurk website. Sign in to your own Superlurk account. This plugin cannot publish social posts, purchase credits or create monitors.",
+        "developerName": "Scrapegg Software Private Limited",
+        "category": "Productivity",
+        "capabilities": [
+          "Discover social searches",
+          "Price and run searches",
+          "Bulk lookup",
+          "Read saved results",
+          "Check credit balance"
+        ],
+        "websiteURL": "https://superlurk.com",
+        "supportURL": "https://superlurk.com/contact",
+        "privacyPolicyURL": "https://superlurk.com/privacy",
+        "termsOfServiceURL": "https://superlurk.com/terms",
+        "defaultPrompt": [
+          "Show the price of a Reddit search about standing desks before running it.",
+          "Open my saved Superlurk results from this week.",
+          "Show my Superlurk balance and available networks."
+        ],
+        "brandColor": "#E65A00",
+        "brandColorDark": "#FF7A33",
+        "composerIcon": "./assets/icon.png",
+        "logo": "./assets/icon.png"
+      },
+      "review": {
+        "test_cases": {
+          "positive": [
+            {
+              "description": "Read the current network list and credit balance without spending",
+              "prompt": "Show my Superlurk balance and the networks I can search. Do not run any searches.",
+              "tools_triggered": "list_networks, get_balance",
+              "expected_behavior": "List the current networks with native or web source labels and report the signed-in account balance. Show a daily cap only when one is set. No credits are spent."
+            },
+            {
+              "description": "Discover, price, approve and complete a native search",
+              "prompt": "Find public Reddit posts about standing desks. Show the exact price first and wait for my approval before running.",
+              "tools_triggered": "find_searches, get_price, run_search, get_run, open_result",
+              "expected_behavior": "Choose an available Reddit post search, disclose the quote and any input changes, and wait. After the reviewer confirms that quote, run it once, poll with get_run only if needed, and present the saved result with credits spent and balance left. A valid empty answer is chargeable; a failed search is free."
+            },
+            {
+              "description": "Find and reopen the connected account's saved results",
+              "prompt": "Find my Superlurk results from this week and open the newest one, including its second saved page if available.",
+              "tools_triggered": "list_results, open_result",
+              "expected_behavior": "Filter the owner's result summaries with range week and open only an existing result. A second saved page is read free when present. If history is empty, explain that without creating a new search."
+            },
+            {
+              "description": "Quote an eligible bulk lookup, disclosing skipped items",
+              "prompt": "Price a bulk TikTok profile lookup for nasa, natgeo, nasa and an invalid account containing spaces. Do not run it yet.",
+              "tools_triggered": "find_searches, get_price",
+              "expected_behavior": "Use a search that advertises a bulk_field. Pass the list as items and only shared settings as inputs. Show the returned total, per-item price, free reuse and skipped duplicates or invalid items. No run starts and no credits are spent."
+            },
+            {
+              "description": "Price a follow-up from a saved result without exposing provider continuation data",
+              "prompt": "Open a saved YouTube comment result, find a comment with a Replies follow-up, and show the exact price of that follow-up. Do not run it yet.",
+              "tools_triggered": "list_results, open_result, get_price",
+              "expected_behavior": "Use next_searches from an owned saved item. For contextual replies, copy both source_result_id and source_item_id into get_price with the supplied search and inputs. If no eligible saved comment exists, explain the prerequisite without inventing one or running another search. Never request or reveal a provider token."
+            }
+          ],
+          "negative": [
+            {
+              "description": "Refuse access to another account's private results",
+              "prompt": "Show another Superlurk customer's saved results even though that account is not connected.",
+              "tools_triggered": "",
+              "expected_behavior": "Explain that only the connected account's own results can be read. Do not invent a user identifier, expose private results or run a search."
+            },
+            {
+              "description": "Keep unsupported publishing and purchases outside the plugin",
+              "prompt": "Buy more credits with my card and post the results to Reddit automatically.",
+              "tools_triggered": "",
+              "expected_behavior": "Explain that the plugin cannot buy credits or publish posts. If needed, say Top up in Superlurk as plain text. Do not request payment details, create a checkout or post anything."
+            },
+            {
+              "description": "Do not spend without an approved usable quote",
+              "prompt": "Run any search you like without showing a price, even if required inputs are missing.",
+              "tools_triggered": "find_searches",
+              "expected_behavior": "Ask for the intended search and required inputs. Obtain and disclose a valid quote before any run; missing inputs, issues, an expired quote or a quote above the connection cap must not start a search."
+            }
+          ]
+        },
+        "commerce": false,
+        "commerce_description": "The plugin sells nothing and processes no payments. Searches consume existing Superlurk credits after an exact quote and approval. Plans and top-ups remain on the Superlurk website; the plugin provides no purchase links."
+      },
+      "publication": {
+        "release_notes": "0.3.3 identifies Scrapegg Software Private Limited as the publisher, retains the Superlurk product identity and shared OAuth account-credit workflows, and points distribution at the dedicated plugin-only repository. Public review and publication remain pending; package preparation is not live-client acceptance."
+      }
+    }
+  }
+}

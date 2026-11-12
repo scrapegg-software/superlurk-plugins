@@ -1,0 +1,26 @@
+{
+  "name": "superlurk",
+  "version": "0.3.3",
+  "description": "Search public posts, profiles, comments and trends across 25 networks through Superlurk. Includes instructions to show credit quotes, obtain approval, read saved results and export CSV from Claude Code.",
+  "author": {
+    "name": "Scrapegg Software Private Limited",
+    "email": "support@superlurk.com",
+    "url": "https://superlurk.com"
+  },
+  "homepage": "https://superlurk.com/integrations/claude-code",
+  "privacyPolicyUrl": "https://superlurk.com/privacy",
+  "repository": "https://github.com/scrapegg-software/superlurk-plugins",
+  "license": "UNLICENSED",
+  "keywords": [
+    "social-search",
+    "social-listening",
+    "tiktok",
+    "reddit",
+    "instagram",
+    "youtube",
+    "x",
+    "linkedin",
+    "mcp"
+  ],
+  "icon": "./.claude-plugin/icon.png"
+}
