@@ -1,5 +1,5 @@
 {
-  "source_commit": "2798fc576c03df30ba0200cad93ee4c9743ec3a7",
+  "source_commit": "ab97458ef4fc8857b8ea41f9c473af823cee919a",
   "publisher": "Scrapegg Software Private Limited",
   "version": "0.3.3",
   "private_preparation": true,
@@ -40,5 +40,7 @@
     "plugins/openai/validation/upstream/plugin.schema.json": "0a4aad95ce337878ad38802ebf0daa3fde76abe3f65400c86bcbb1ec0b3ab883",
     "plugins/openai/validation/upstream/provenance.json": "4252b4a98cdc154b29d17e2cc5ce31490a69571c437704a2bfc0417dfd25de8b",
     "plugins/openai/validation/validate.py": "ba018ad0cae7c0940e02b19d26549a301c9745db2ae416e1a3965d49945cbf13"
-  }
+  },
+  "source_tree_sha256": "665e96a062af17caef3014ce7e767d202e37101acacc864654e3bac161425960",
+  "source_git_tree": "6100073aa363812c2f0b1dbdc40af8d67fb3c972"
 }
