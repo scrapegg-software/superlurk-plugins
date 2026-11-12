@@ -1,6 +1,6 @@
 # OpenAI submission status
 
-**Current package 0.3.3 is prepared for Scrapegg Software Private Limited.** It retains the Superlurk product identity and points to the dedicated plugin-only distribution repository. No new portal upload, scan, submission, approval or publication is established by this metadata update.
+**Current package 0.3.4 is prepared for Scrapegg Software Private Limited.** This metadata update adds Claude directory documentation, support and terms links and synchronizes the shared package versions. It retains the Superlurk product identity and dedicated plugin-only distribution repository. No new portal upload, scan, submission, approval or publication is established by this update.
 
 **Version 0.3.2: private owner-portal upload accepted; not submitted or publicly published.** The
 [12 November production report](../../implementation_evidence/integrations/production_main_2026-11-12/README.md)
@@ -37,12 +37,13 @@ Before submission:
   and full HTML hashes back, refresh client metadata and start a new conversation. Verify 20 layouts and 25 network
   labels, narrow/light/dark rendering, keyboard access, links, restored state and interrupted actions in real hosts;
   synthetic checks remain separate evidence.
-- Check both CSP conventions and configured widget origin. Fetch/connect lists stay empty; only price/results
+- Check both CSP conventions and the configured OpenAI widget origin. Fetch/connect lists stay empty; only price/results
   may load images from the signed first-party `https://img.superlurk.com` relay. Balance keeps an empty resource
-  list. Do not add provider domains or wildcards. For this candidate, validate the intended configured origin
-  `MCP_WIDGET_DOMAIN=https://superlurk.com` by reading both `ui.domain` and `openai/widgetDomain` from deployed
-  resource metadata and checking the portal requirements. The origin belongs to the single Superlurk universal
-  plugin. Earlier proposals for a separate widget subdomain are historical notes, not deployment proof.
+  list. Do not add provider domains or wildcards. Validate `MCP_WIDGET_DOMAIN=https://superlurk.com` through
+  `openai/widgetDomain` in deployed resource-list and resource-read metadata. The shared server does not inject
+  standard `ui.domain`, whose format is host-specific; other MCP Apps hosts choose their own sandbox origin.
+  Confirm the nested standard UI metadata and both CSP conventions remain present. Earlier proposals for a
+  separate widget subdomain are historical notes, not deployment proof.
 - Provide the portal's exact domain-verification challenge at its prescribed URL without
   overwriting another plugin's challenge. Keep domain-verification values out of the package.
 - Prepare the fully featured reviewer account and representative sample data with enough

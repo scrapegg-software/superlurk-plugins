@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "superlurk",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "description": "Research public social posts, accounts, comments and trends with Superlurk. Discover searches, review a quote, and browse your saved results.",
   "author": {
     "name": "Scrapegg Software Private Limited",
@@ -110,7 +110,7 @@
         "commerce_description": "The plugin sells nothing and processes no payments. Searches consume existing Superlurk credits after an exact quote and approval. Plans and top-ups remain on the Superlurk website; the plugin provides no purchase links."
       },
       "publication": {
-        "release_notes": "0.3.3 identifies Scrapegg Software Private Limited as the publisher, retains the Superlurk product identity and shared OAuth account-credit workflows, and points distribution at the dedicated plugin-only repository. Public review and publication remain pending; package preparation is not live-client acceptance."
+        "release_notes": "0.3.4 adds Claude directory support, documentation and terms links while retaining the shared Superlurk package identity and OAuth account-credit workflows. Public review and publication remain pending; package preparation is not live-client acceptance."
       }
     }
   }
