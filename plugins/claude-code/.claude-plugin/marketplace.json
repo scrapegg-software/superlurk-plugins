@@ -12,7 +12,7 @@
       "name": "superlurk",
       "source": "./",
       "description": "Search 25 networks, including TikTok, Instagram, YouTube, Reddit and X, with the price shown before every search.",
-      "version": "0.3.3",
+      "version": "0.3.4",
       "category": "productivity",
       "homepage": "https://superlurk.com/integrations/claude-code"
     }
