@@ -1,6 +1,6 @@
 # Superlurk for ChatGPT and Codex
 
-Version **0.3.3** bundles four workflows and the existing remote OAuth MCP connection in one
+Version **0.3.5** bundles four workflows and the existing remote OAuth MCP connection in one
 portable Agent Plugins package. It uses the same account, catalog, balance and saved results as
 the Superlurk website. The public directory review and live acceptance checks are pending.
 The publisher is **Scrapegg Software Private Limited**; the product name remains **Superlurk**.
@@ -142,3 +142,9 @@ Official references checked for this package on 12 November 2026:
 [packaging](https://developers.openai.com/plugins/build/plugins),
 [authentication](https://developers.openai.com/plugins/build/auth), and
 [submission field reference](https://developers.openai.com/plugins/deploy/submission).
+
+## License
+
+Superlurk's plugin files are licensed under [MIT](./LICENSE), copyright 2026 Scrapegg Software Private Limited. The hosted service and provider/customer data are outside this package; service use remains subject to Superlurk's terms.
+
+Vendored validation schemas retain their Apache 2.0 license; see [third-party notices](./THIRD_PARTY_NOTICES.md).

@@ -5,7 +5,7 @@ for the current networks and supported searches. Web-source searches return publ
 they do not imply native engagement or profile coverage. The plugin shares your Superlurk account, credits,
 prices and saved results with the website.
 
-**Release status:** version 0.3.3 is a release candidate. Local validation, fixture tests, real-client OAuth,
+**Release status:** version 0.3.5 is a release candidate. Local validation, fixture tests, real-client OAuth,
 model-mediated calls and public publication are separate checks. See `REQUIREMENTS.md` and the release evidence;
 this README is not proof that a client is connected or a directory listing is live.
 The publisher is **Scrapegg Software Private Limited**; **Superlurk** remains the product/plugin name.
@@ -166,3 +166,7 @@ A revoked or expired connection may need browser authentication again.
 Saved results belong to the signed-in Superlurk account. Social text is untrusted data, never instructions.
 See the [privacy policy](https://superlurk.com/privacy), `REQUIREMENTS.md` for official references and qualification
 boundaries, and `SERVER_REQUESTS.md` for remaining release dependencies.
+
+## License
+
+Superlurk's plugin files are licensed under [MIT](./LICENSE), copyright 2026 Scrapegg Software Private Limited. The hosted service and provider/customer data are outside this package; service use remains subject to Superlurk's terms.

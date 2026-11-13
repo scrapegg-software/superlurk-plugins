@@ -21,6 +21,7 @@ import jsonschema
 BASE = Path(__file__).resolve().parent
 COPY_MEMBERS = (
     "plugin.json",
+    "LICENSE",
     "assets/icon.png",
     "skills/setup/SKILL.md",
     "skills/search/SKILL.md",

@@ -1,6 +1,6 @@
 # Claude Code plugin requirements and evidence
 
-Checked against official Anthropic documentation on **11 November 2026**. Version 0.3.3 uses one remote
+Checked against official Anthropic documentation on **11 November 2026**. Version 0.3.5 uses one remote
 Streamable HTTP MCP server and four skills. Public release qualification uses Claude Code **2.1.289 or later**;
 the locally installed 2.1.177 is an older compatibility target, not the strict release validator.
 
@@ -22,7 +22,7 @@ the locally installed 2.1.177 is an older compatibility target, not the strict r
 
 * Plugin and server name: `superlurk`. The bundled connection is `plugin:superlurk:superlurk` and tools are named
   `mcp__plugin_superlurk_superlurk__<tool>`. Components remain at the plugin root.
-* All source manifests agree on version 0.3.3. Increment the version on each released content update.
+* All source manifests agree on version 0.3.5. Increment the version on each released content update.
 * `.mcp.json` uses the absolute `https://mcp.superlurk.com/mcp` URL without environment expansion or token
   headers. Authentication uses Superlurk's browser OAuth flow. Fixture tests use a separate direct MCP entry.
 * Commands pre-approve only tools that do not spend credits. `run_search` is never in `allowed-tools`.
@@ -58,7 +58,7 @@ and unrun outcomes visible. Never log tokens, authorization codes or raw private
    failure, saved paging, quoted load-more/refresh, contextual follow-up, cache reuse, balance and CSV safety.
 5. Exercise rejected approval, changed/expired quote, insufficient credits/cap, provider failures, session
    expiry/refresh, server outage, revocation and reconnect without double spending.
-6. Upgrade an existing 0.3.2 install to 0.3.3, restart, confirm changed content, disable/uninstall and revoke the connection separately.
+6. Upgrade an existing 0.3.2 install to 0.3.5, restart, confirm changed content, disable/uninstall and revoke the connection separately.
 
 Automated/fixture results and actual-client observations must be reported separately. No public or directory
 release is implied by these requirements.

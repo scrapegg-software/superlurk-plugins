@@ -1,6 +1,6 @@
 {
   "name": "superlurk",
-  "version": "0.3.4",
+  "version": "0.3.5",
   "description": "Search public posts, profiles, comments and trends across 25 networks through Superlurk. Includes instructions to show credit quotes, obtain approval, read saved results and export CSV from Claude Code.",
   "author": {
     "name": "Scrapegg Software Private Limited",
@@ -13,7 +13,7 @@
   "privacyPolicyUrl": "https://superlurk.com/privacy",
   "termsOfServiceUrl": "https://superlurk.com/terms",
   "repository": "https://github.com/scrapegg-software/superlurk-plugins",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "keywords": [
     "social-search",
     "social-listening",

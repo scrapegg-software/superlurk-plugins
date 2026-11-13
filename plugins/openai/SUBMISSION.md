@@ -1,6 +1,6 @@
 # OpenAI submission status
 
-**Current package 0.3.4 is prepared for Scrapegg Software Private Limited.** This metadata update adds Claude directory documentation, support and terms links and synchronizes the shared package versions. It retains the Superlurk product identity and dedicated plugin-only distribution repository. No new portal upload, scan, submission, approval or publication is established by this update.
+**Current package 0.3.5 is prepared for Scrapegg Software Private Limited.** This version adds MIT licensing, retains the upstream validation schemas' Apache 2.0 notice, and synchronizes the shared package versions. It retains the Superlurk product identity and dedicated plugin-only distribution repository. No new portal upload, scan, submission, approval or publication is established by this update.
 
 **Version 0.3.2: private owner-portal upload accepted; not submitted or publicly published.** The
 [12 November production report](../../implementation_evidence/integrations/production_main_2026-11-12/README.md)
