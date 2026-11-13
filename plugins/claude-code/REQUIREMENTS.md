@@ -2,7 +2,7 @@
 
 Checked against official Anthropic documentation on **11 November 2026**. Version 0.3.5 uses one remote
 Streamable HTTP MCP server and four skills. Public release qualification uses Claude Code **2.1.289 or later**;
-the locally installed 2.1.177 is an older compatibility target, not the strict release validator.
+2.1.177 remains the historical older compatibility target, not the strict release validator.
 
 ## Official references
 

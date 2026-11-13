@@ -1,5 +1,5 @@
 {
-  "source_commit": "fc861f5314f005ae5038f68723af2c1ce89606bf",
+  "source_commit": "d11bc6ed6a259815bb8d3397be3ae0707da0c8de",
   "publisher": "Scrapegg Software Private Limited",
   "version": "0.3.5",
   "license": "MIT",
@@ -18,7 +18,7 @@
     "plugins/claude-code/.mcp.json": "dde185c492ffa5c8bd1b4b647f473036e0aded39ce84ebd805b5a54f01fd3f9f",
     "plugins/claude-code/LICENSE": "0c0b52c15d5b4829a6dbadeac1197e7752ed38973c7d35956e7f5f600008e6e8",
     "plugins/claude-code/README.md": "c617b71ef60c9965ff967554a6012a1c1ed33e9bdbca3898eea083a5bd8cba30",
-    "plugins/claude-code/REQUIREMENTS.md": "c55237d1f6e9ed4cb4ba3d933d0dddf942840788ed48a7fe174bbb9643ce0710",
+    "plugins/claude-code/REQUIREMENTS.md": "74234b36ab64c41672fc213efd32daf22e28194ea79c6fc2d197128f1c7203b4",
     "plugins/claude-code/SERVER_REQUESTS.md": "3b64655cc514186acccf07eacb7a008390a55cc7b8648a90a6e744314af1c5df",
     "plugins/claude-code/skills/balance/SKILL.md": "9dcc745c5e5fb4118345f0a2e5bb62c6f03dcd27e4eecb98b9de6d0ce2f1ab17",
     "plugins/claude-code/skills/results/SKILL.md": "4453f4f957a12bc05871c8503dabead15a65a4b4a6d73a98f7d2ffc328662a41",
@@ -50,8 +50,8 @@
     "plugins/openai/validation/upstream/provenance.json": "8c69a39bab1ca850f1675ed2533d7dbc245227c85fdcdbdfc1a869673d8a6277",
     "plugins/openai/validation/validate.py": "ba018ad0cae7c0940e02b19d26549a301c9745db2ae416e1a3965d49945cbf13"
   },
-  "source_tree_sha256": "00545640dfa182d4685b07850ee4627c1d7d00b6d52cd5ad4df723313fcc3492",
-  "source_git_tree": "53e93ba3b9fe7efceb4bdc49ef114917ce568ed6",
+  "source_tree_sha256": "d9245d4d3eafc5a1011635ebe1f89c87b884f7b3daa37e3b2b8b832da3773c5b",
+  "source_git_tree": "b1efb05e5a1e27df75084fd331e0fe6b9f4d6613",
   "third_party_licenses": {
     "plugins/openai/validation/upstream/plugin.schema.json": "Apache-2.0",
     "plugins/openai/validation/upstream/mcp.schema.json": "Apache-2.0"
