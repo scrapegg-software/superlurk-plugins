@@ -1,11 +1,12 @@
 # OpenAI submission status
 
-**Source candidate 0.3.6:** quote-only warning/balance disclosure and discovery guidance are being qualified
-locally. The public Git distribution and existing vendor drafts remain 0.3.5; no update, submission, publication
-or production deployment is established by this candidate. Historical checkpoints below keep their original
-versions and dates.
+**14 November 2026, 09:02:52 UTC manual-distribution checkpoint:** version 0.3.6 is available from the public
+plugin-only repository at commit `9d54b0cb0c23d8f1ea77e61bfeb4383e44c1cc5c` as a manual-install release candidate.
+The official OpenAI and Claude directory drafts remain 0.3.5, not submitted, approved or published. Public Git
+availability does not establish complete retained-client acceptance. Historical checkpoints below keep their
+original versions and dates.
 
-**14 November 2026: the company 0.3.5 draft is uploaded, not submitted or published.** The verified company
+**Portal checkpoint, 14 November 2026, 07:23:42 UTC: the company 0.3.5 draft is uploaded, not submitted or published.** The verified company
 owner publishes as **Scrapegg Software Private Limited**. Four skills passed package checks. Version 0.3.5
 adds MIT licensing, preserves the upstream validation schemas' Apache 2.0 notice and uses the public
 [plugin-only repository](https://github.com/scrapegg-software/superlurk-plugins) at reviewed commit
@@ -55,8 +56,10 @@ Before submission:
 
 - Reconcile the source, schema, catalog, capability state, deployed API/worker/scheduler and artifact versions and
   hashes. The initial `400ea6a7` API clock rollout and `r0036` catalog alignment passed, including authenticated
-  exhaustive discovery and a strict 16-sample/900-second watch. The later 0.3.6/widget/0061 source candidate still
-  requires its own production and client readbacks. Preserve historical receipts at their original source and time.
+  exhaustive discovery and a strict 16-sample/900-second watch. The later 0.3.6 source has separate production,
+  migration 0061 and bounded health-watch readbacks; complete client and catalog-execution acceptance remain
+  pending. Those private operational receipts are outside this plugin-only distribution. Preserve historical
+  receipts at their original source and time.
 - Complete real install, sign-in, quote/decline/approve/run/poll, saved-result reuse, bulk, follow-up,
   continuation/refresh, export, restart, token refresh, isolation, revocation and package lifecycle checks for every
   retained client surface. Public Codex 0.3.5 installation and bounded CLI balance/results reads are supporting

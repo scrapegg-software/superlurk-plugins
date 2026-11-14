@@ -5,22 +5,20 @@
   "publisher": "Scrapegg Software Private Limited",
   "version": "0.3.6",
   "license": "MIT",
-  "private_preparation": true,
   "application_source_included": false,
-  "directory_status": "Prepared manual-install release candidate; official directory drafts remain at 0.3.5 and are not submitted/published by this preparation",
+  "directory_status": "Official OpenAI and Claude directory drafts remain 0.3.5, not submitted, approved or published; public Git 0.3.6 is a separate manual-install release candidate",
   "cloud_package_status": {
     "company_OpenAI": "0.3.5 draft; unchanged",
     "Claude_bundle": "0.3.5 draft; unchanged",
     "personal_cloud": "0.3.2; unchanged"
   },
-  "publicly_published": false,
   "all_retained_claims_qualified": false,
   "previous_public_git_commit": "882e65ec6e202a5e8b9a9e0be01929795c6ade22",
   "live_test_budget": "Separate approved source-bound manifest required for paid QA; this artifact builder performs no live calls, allocation or provider spending",
   "files": {
     "LICENSE": "0c0b52c15d5b4829a6dbadeac1197e7752ed38973c7d35956e7f5f600008e6e8",
     "THIRD_PARTY_NOTICES.md": "9e9d4f4082bd4b8c3a8a5c73c5e65e7e4a933da6312add4265f727200d83d957",
-    "README.md": "b78dbe2c5feb68214ba432a8db3f37fe2f89c8153aa61fd93dc7b4da7973dc5c",
+    "README.md": "dba882e81844ef44f07528062a2713067b78807c2a07f88a7a602026cea94a27",
     ".claude-plugin/marketplace.json": "b6f900c17fa544b27176ae93b549d2f52d2ed989b71f616062b413a2b7c410c4",
     ".agents/plugins/marketplace.json": "6e2b4840e74d7fe0eee60794c24f2a18dba64dd459ad31391adf081e06a87943",
     "plugins/claude-code/REQUIREMENTS.md": "986de86d910fe1b6439ac748847f98b95b383c40727fb5f1f4a82bc1c1568ba5",
@@ -35,7 +33,7 @@
     "plugins/openai/THIRD_PARTY_NOTICES.md": "de3b882d030e6a898e5d60772aaa7687a2aa51d2b32a6f015a9f7ca32896c349",
     "plugins/openai/plugin.json": "64efd6df1ff83dc419faa4a84857b2b6aea863b763d7a13c8740a8651a82bbb5",
     "plugins/openai/README.md": "78435625d71406553b94c4ba8688600f159881b8ebcf9535b268e55fc72fb16a",
-    "plugins/openai/SUBMISSION.md": "dd44e4d483d7d58ee597a1c6fd46c76c92370b90865f337c79d30db0798f2a30",
+    "plugins/openai/SUBMISSION.md": "dc8e44f823e5890defd58d2d0454be56abbdea4c9870da7156a565d2a7b8270f",
     "plugins/openai/mcp.json": "d66d969312c0d87b8b290bea518d4f4f92c2785b28ce625105f8851355e6ec9d",
     "plugins/openai/assets/icon.png": "c981b0b239b6d4359df7cb3fe7f277cc4149efd3f6cbc18b4dc9f1878e30a6ae",
     "plugins/openai/validation/validate.py": "ba018ad0cae7c0940e02b19d26549a301c9745db2ae416e1a3965d49945cbf13",
@@ -62,11 +60,27 @@
     "plugins/claude-code/skills/superlurk-search/SKILL.md": "309b0f5f62b593706fe94b05c51478510c153c740dc6159a0b10b89beb9ebf64"
   },
   "distribution_documentation_transformations": {
-    "README.md": "Appended explicit manual candidate/submission/budget/rollback checkpoint; package runtime unchanged",
-    "plugins/openai/SUBMISSION.md": "Replaced private application-relative receipt/coordination links with public distribution prose; updated approved743packet status to awaiting qualified allocation/execution without embedding authority or private manifest"
+    "README.md": "Public-only status checkpoint distinguishes the available manual Git 0.3.6 candidate from official 0.3.5 drafts; original private preparation checkpoint explicitly historical",
+    "plugins/openai/SUBMISSION.md": "Portable public submission prose; dated manual Git 0.3.6 availability, unchanged official 0.3.5 draft/support gates, and separate operational versus incomplete client acceptance",
+    "SOURCE.json": "Preparation-time publication flags moved into an explicitly dated historical checkpoint; current public manual Git status recorded separately; no self-hash"
   },
   "third_party_licenses": {
     "plugins/openai/validation/upstream/plugin.schema.json": "Apache-2.0",
     "plugins/openai/validation/upstream/mcp.schema.json": "Apache-2.0"
+  },
+  "historical_preparation_checkpoint": {
+    "stage": "Before the public Git merge on 14 November 2026",
+    "private_preparation_at_checkpoint": true,
+    "publicly_published_at_checkpoint": false,
+    "note": "These flags record the original private preparation. Current public manual-distribution status is recorded separately below; archived preparation metadata and source ZIPs are unchanged."
+  },
+  "public_git_status": {
+    "stage": "PUBLIC_MANUAL_INSTALL_RELEASE_CANDIDATE",
+    "version": "0.3.6",
+    "first_public_main_commit": "9d54b0cb0c23d8f1ea77e61bfeb4383e44c1cc5c",
+    "observed_at": "2026-11-14T09:02:52.193647+00:00",
+    "repository": "https://github.com/scrapegg-software/superlurk-plugins",
+    "formal_release_tag_created": false,
+    "does_not_establish_official_directory_publication_or_full_client_acceptance": true
   }
 }
