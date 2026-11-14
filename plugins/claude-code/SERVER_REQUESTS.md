@@ -1,6 +1,9 @@
 # Claude Code plugin release dependencies
 
-Source candidate 0.3.6 reuses the existing shared MCP server; no additional server or charging path is required.
+Prepared 0.3.7 reuses the shared eight-tool MCP server and charging path. The source changes keep saved rows
+and whole links reachable, restore supported TikTok profile source URLs, report actual settled search charges,
+and bound group status polling across mixed terminal outcomes, rate limits and page lifecycle changes.
+The combined source is not yet a frozen archive, production rollout or complete client qualification.
 The current source catalog covers 25 networks; release tests check that count against the registry.
 The source and nested marketplaces now agree with plugin.json. Earlier server requests and November 6
 fixture observations remain available in Git history; their completion does not qualify a current release.

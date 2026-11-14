@@ -5,11 +5,13 @@ for the current networks and supported searches. Web-source searches return publ
 they do not imply native engagement or profile coverage. The plugin shares your Superlurk account, credits,
 prices and saved results with the website.
 
-**Release status:** source candidate 0.3.6 improves quote-only disclosure and discovery guidance. It has not
-been published or uploaded to the directory; existing public manual-install artifacts and directory drafts stay
-at 0.3.5. Local validation, fixture tests, real-client OAuth,
-model-mediated calls and public publication are separate checks. See `REQUIREMENTS.md` and the release evidence;
-this README is not proof that a client is connected or a directory listing is live.
+**Release status: Prepared 0.3.7 source metadata.** This candidate keeps saved rows and whole links reachable,
+restores supported TikTok profile source URLs, reports settled search charges accurately, and bounds group
+status reads across mixed terminal outcomes, rate limits and page lifecycle changes. The same eight tools,
+OAuth and charging path remain. Final source freeze, archives, rollout and client readbacks are pending.
+Public Git main `1b0eb25694bde497767367f85e4e7c58a6817e71` remains the 0.3.6 manual-install candidate.
+The existing Claude bundle scans that 0.3.6 source and is not submitted; optional MCP registration is not a
+universal bundle blocker. Local checks, real-client behavior and directory approval remain separate evidence.
 The publisher is **Scrapegg Software Private Limited**; **Superlurk** remains the product/plugin name.
 
 ## Install
@@ -42,13 +44,13 @@ Restart Claude Code or use `/reload-plugins` after installation. Check `claude p
 
 Release archives contain an integration-only marketplace. After extracting one, follow its included install
 instructions and add the extracted marketplace folder. Its contents do not require access to the application
-repository. Public hosting and directory publication remain separate release steps until a publisher supplies
-an actual release URL.
+repository. Public Git manual distribution is available at the repository below; 0.3.7 publication and official
+directory approval remain separate pending steps.
 
 The dedicated [plugin-only distribution repository](https://github.com/scrapegg-software/superlurk-plugins)
-is separate from the private application repository. It may remain private during submission preparation;
-repository preparation does not mean a public directory listing or public installation is available.
-Once you have access to its reviewed marketplace:
+is separate from the private application repository. It is public and supplies the 0.3.6 manual-install candidate;
+that availability does not establish an official directory listing or full retained-client acceptance. To use
+its reviewed marketplace:
 
 ```bash
 claude plugin marketplace add scrapegg-software/superlurk-plugins

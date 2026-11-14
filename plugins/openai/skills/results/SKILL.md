@@ -14,7 +14,7 @@ names from available tools. They never spend credits and never make a new provid
 2. Pick an owned result from the returned summaries. Use its root `result_id` to call
    `open_result(page=1)`. Saved chains group provider pages under one result; a surviving saved
    page may still open through that root after an older page expires.
-3. Read additional already-saved item pages only when needed: `open_result(page=2...)`, 20 items
+3. Read additional already-saved item pages only when needed: `open_result(page=2...)`, up to 20 items
    per page, is free. A run containing multiple searches or bulk items is a different level:
    `get_run(run_id=..., page=2...)` pages searches 10 per page using `results_pages` and `counts`.
 4. Preserve item labels for bulk results and describe failed items as free. Summarize relevant
