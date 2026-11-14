@@ -1,8 +1,11 @@
 # Claude Code plugin requirements and evidence
 
-Checked against official Anthropic documentation on **11 November 2026**. Source candidate 0.3.6 uses one remote
-Streamable HTTP MCP server and four skills. Public release qualification uses Claude Code **2.1.289 or later**;
-2.1.177 remains the historical older compatibility target, not the strict release validator.
+Platform references below were last checked against official Anthropic documentation on **11 November 2026**.
+Prepared 0.3.7 source metadata uses one remote Streamable HTTP MCP server and four skills. It covers complete
+free saved-row reading with whole links, supported TikTok profile source URLs, actual settled-charge reporting,
+and bounded group status polling across mixed terminal outcomes, rate limits and page lifecycle changes.
+Public release qualification uses Claude Code **2.1.289 or later**; 2.1.177 remains the historical older
+compatibility target, not the strict release validator. These prepared changes are not a deployed/client pass.
 
 ## Official references
 
@@ -22,7 +25,7 @@ Streamable HTTP MCP server and four skills. Public release qualification uses Cl
 
 * Plugin and server name: `superlurk`. The bundled connection is `plugin:superlurk:superlurk` and tools are named
   `mcp__plugin_superlurk_superlurk__<tool>`. Components remain at the plugin root.
-* All source manifests agree on version 0.3.6. Increment the version on each released content update.
+* All source manifests agree on version 0.3.7. Increment the version on each released content update.
 * `.mcp.json` uses the absolute `https://mcp.superlurk.com/mcp` URL without environment expansion or token
   headers. Authentication uses Superlurk's browser OAuth flow. Fixture tests use a separate direct MCP entry.
 * Commands pre-approve only tools that do not spend credits. `run_search` is never in `allowed-tools`.
@@ -58,7 +61,7 @@ and unrun outcomes visible. Never log tokens, authorization codes or raw private
    failure, saved paging, quoted load-more/refresh, contextual follow-up, cache reuse, balance and CSV safety.
 5. Exercise rejected approval, changed/expired quote, insufficient credits/cap, provider failures, session
    expiry/refresh, server outage, revocation and reconnect without double spending.
-6. Upgrade an existing 0.3.2 install to the 0.3.6 candidate, restart, confirm changed content, disable/uninstall and revoke the connection separately.
+6. Upgrade an existing 0.3.2 install to the 0.3.7 candidate, restart, confirm changed content, disable/uninstall and revoke the connection separately.
 
 Automated/fixture results and actual-client observations must be reported separately. No public or directory
 release is implied by these requirements.

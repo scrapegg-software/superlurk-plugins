@@ -65,10 +65,10 @@ a search that fails is free.
 | `list_networks` | no | See the current networks, how many searches each has, and whether results are found on the web (`source`) |
 | `find_searches` | no | Find the right search: `query` (the kind of search, not the topic), `network`, `goal` (find, accounts, talk, trends, business, live, places, tools), `limit`. `bulk_field` says whether it takes a list |
 | `get_price` | no | Quote a `search_id` plus `inputs` (optional `fix_ids`), or a saved `result_id` with `purpose: "load_more"` or `"refresh"`. Quotes carry exact `credits`, changes, warnings, issues and expiry. `items` prices up to 50 values for `bulk_field`. Contextual replies use the returned `source_result_id` and `source_item_id` together |
-| `run_search` | **yes** | Run a confirmed `quote_id`. `wait_seconds` up to 25. Returns `run_id`, `state`, and when done `results[]` (each with a `result_id` and its first 20 items) plus `result_id` of the first |
+| `run_search` | **yes** | Run a confirmed `quote_id`. `wait_seconds` up to 25. Returns `run_id`, `state`, and when done `results[]` (each with a `result_id` and up to its first 20 items) plus `result_id` of the first |
 | `get_run` | no | Check a run that was still going when `run_search` returned; `page` moves through a run's searches, 10 per page (a bulk lookup has one per item) |
 | `list_results` | no | List saved results, newest first: `query`, `network`, `limit`, `after` (the `next_after` of the previous page) |
-| `open_result` | no | Read a saved result, 20 items a page: `result_id`, `page` (from 1) |
+| `open_result` | no | Read a saved result, up to 20 items a page (follow its reported `pages` and `page_size`): `result_id`, `page` (from 1) |
 | `get_balance` | no | Credits, plan, and, if one is set, this connection's daily cap and what is left of it today |
 
 Every response reports `credits_spent` and `balance_left`. Mention them after a run.
@@ -124,7 +124,7 @@ Every response reports `credits_spent` and `balance_left`. Mention them after a 
 
 ### 4. Read results
 
-* `run_search` and `get_run` return `results[]`, each with a `result_id` and its first 20 items. Use
+* `run_search` and `get_run` return `results[]`, each with a `result_id` and up to its first 20 items. Use
   `open_result` with `page` (2, 3, ...) for more, and `list_results` to find older results by `query` or
   `network`.
 * `open_result(page)` reads already saved items for free. Fetching another provider page is different:

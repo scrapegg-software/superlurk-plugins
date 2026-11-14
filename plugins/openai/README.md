@@ -1,17 +1,20 @@
 # Superlurk for ChatGPT and Codex
 
-Source candidate **0.3.6** bundles four workflows and the existing remote OAuth MCP connection in one
-portable Agent Plugins package. It uses the same account, catalog, balance and saved results as
-the Superlurk website. The candidate strengthens quote-only warning/balance disclosure and discovery guidance. It is not published;
-current public manual-install artifacts and directory drafts remain 0.3.5. Full live acceptance is pending.
+Prepared source candidate **0.3.7** bundles four workflows and the existing remote OAuth MCP connection in
+one portable Agent Plugins package. It uses the same account, catalog, balance and saved results as the website.
+It keeps saved rows and whole links reachable through free reading pages, restores supported TikTok profile
+source URLs, reports settled search charges accurately, and bounds group status reads across mixed terminal
+outcomes, rate limits and page lifecycle changes. The eight tools, OAuth and charging path are unchanged.
+Final source freeze, archives, deployment and client readbacks are pending; 0.3.7 is not publicly released or submitted.
 The publisher is **Scrapegg Software Private Limited**; the product name remains **Superlurk**.
 
 ## Plugin-only distribution
 
 The dedicated distribution repository is [scrapegg-software/superlurk-plugins](https://github.com/scrapegg-software/superlurk-plugins).
-Its reviewed public main `882e65ec6e202a5e8b9a9e0be01929795c6ade22` provides version 0.3.5 separately
-from the private application repository. The following commands install that published Git snapshot,
-not this unpublished 0.3.6 source candidate; Git availability is not directory approval:
+Its reviewed public main `1b0eb25694bde497767367f85e4e7c58a6817e71` provides the 0.3.6 manual-install
+candidate separately from the private application repository. The following commands install that public Git
+snapshot. Git availability does not establish directory approval. The company OpenAI draft is 0.3.6, not
+submitted or published; final reviewer access, video, scan and policy decisions remain pending:
 
 ```bash
 codex plugin marketplace add scrapegg-software/superlurk-plugins --json
@@ -102,8 +105,8 @@ Do not create a second direct MCP entry as a substitute for the plugin test.
 This is a generated compatibility artifact from one authoring package and identity,
 not a separately maintained public plugin. Its runtime, OAuth and paid workflow
 evidence remain separate from the canonical package's validation.
-The checked-in `integrations/codex-compat-plugin` contains the same seven generated runtime
-members. Release packaging verifies every member against the canonical source and rejects stale
+The checked-in `integrations/codex-compat-plugin` contains eight runtime members: seven canonical copies and
+portable `mcp.json`. Release packaging verifies every member against the canonical source and rejects stale
 skills, identities or transport settings. Regenerate it after any canonical content or version change.
 
 ## Validate locally
