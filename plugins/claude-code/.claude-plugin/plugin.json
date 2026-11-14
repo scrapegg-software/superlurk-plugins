@@ -1,6 +1,6 @@
 {
   "name": "superlurk",
-  "version": "0.3.5",
+  "version": "0.3.6",
   "description": "Search public posts, profiles, comments and trends across 25 networks through Superlurk. Includes instructions to show credit quotes, obtain approval, read saved results and export CSV from Claude Code.",
   "author": {
     "name": "Scrapegg Software Private Limited",

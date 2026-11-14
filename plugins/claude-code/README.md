@@ -5,7 +5,9 @@ for the current networks and supported searches. Web-source searches return publ
 they do not imply native engagement or profile coverage. The plugin shares your Superlurk account, credits,
 prices and saved results with the website.
 
-**Release status:** version 0.3.5 is a release candidate. Local validation, fixture tests, real-client OAuth,
+**Release status:** source candidate 0.3.6 improves quote-only disclosure and discovery guidance. It has not
+been published or uploaded to the directory; existing public manual-install artifacts and directory drafts stay
+at 0.3.5. Local validation, fixture tests, real-client OAuth,
 model-mediated calls and public publication are separate checks. See `REQUIREMENTS.md` and the release evidence;
 this README is not proof that a client is connected or a directory listing is live.
 The publisher is **Scrapegg Software Private Limited**; **Superlurk** remains the product/plugin name.

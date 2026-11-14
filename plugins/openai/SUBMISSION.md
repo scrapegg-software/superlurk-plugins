@@ -1,74 +1,112 @@
 # OpenAI submission status
 
-**Current package 0.3.5 is prepared for Scrapegg Software Private Limited.** This version adds MIT licensing, retains the upstream validation schemas' Apache 2.0 notice, and synchronizes the shared package versions. It retains the Superlurk product identity and dedicated plugin-only distribution repository. No new portal upload, scan, submission, approval or publication is established by this update.
+**Source candidate 0.3.6:** quote-only warning/balance disclosure and discovery guidance are being qualified
+locally. The public Git distribution and existing vendor drafts remain 0.3.5; no update, submission, publication
+or production deployment is established by this candidate. Historical checkpoints below keep their original
+versions and dates.
 
-**Version 0.3.2: private owner-portal upload accepted; not submitted or publicly published.** The
-[12 November production report](../../implementation_evidence/integrations/production_main_2026-11-12/README.md)
-records the private package update to 0.3.2 and displayed server/skill metadata. This is package-ingestion evidence,
-not a directory scan pass, publisher verification, installed ChatGPT acceptance, submission, approval or public
-listing. Actual ChatGPT installation/conversation remains unverified in that report.
+**14 November 2026: the company 0.3.5 draft is uploaded, not submitted or published.** The verified company
+owner publishes as **Scrapegg Software Private Limited**. Four skills passed package checks. Version 0.3.5
+adds MIT licensing, preserves the upstream validation schemas' Apache 2.0 notice and uses the public
+[plugin-only repository](https://github.com/scrapegg-software/superlurk-plugins) at reviewed commit
+`882e65ec6e202a5e8b9a9e0be01929795c6ade22`. The application repository stays private. Package checks and
+business verification do not establish a completed client journey or review acceptance.
 
-The widget refresh needs its own pinned build, deployment and real-host readback. Do not relabel the 0.3.2 upload
-or earlier screenshots as acceptance of refreshed templates. Follow [release next steps](../RELEASE_NEXT_STEPS.md);
-this file does not select or change the next release version.
+A private 12 November production report records the earlier personal 0.3.2 upload. That historical
+checkpoint does not describe the current company draft or certify refreshed widgets. Private application
+release coordination and evidence are intentionally absent from this public plugin-only distribution.
+See this distribution's root README and SOURCE.json for the prepared snapshot and its status; neither
+substitutes for production, client or submission receipts.
 
-The public package targets ChatGPT and Codex through the universal plugin directory. It contains
-one MCP server, so the five positive and three negative cases belong in
-`plugin.json → extensions.com.openai.review.test_cases`. They describe expected behavior, not
-completed test results. Run each case from a clean client against the pinned release and retain
-redacted evidence. The saved-comment follow-up case needs an owned YouTube comment result with
-an eligible reply item; create that prerequisite through the normal quoted customer path as
-part of the acceptance run rather than inventing a provider token.
+## Resolve the OpenAI review gates
+
+OpenAI Support case **19960253** has a human response, with no subsequent determination observed in the latest
+approved browser check. It is not a formal rejection or preapproval. Support already has the three questions
+and said they need not be resent:
+
+- **Operation exposure:** current [tool guidance](https://developers.openai.com/plugins/plugin-guidelines#tool-independence-and-exposure)
+  requires individually exposed model-callable operations and disallows discovery/selection plus a generic
+  executor enabling operations not individually exposed for review. Superlurk's catalog → generic quote inputs
+  → executor structure needs a review-team determination or an explicitly selected adapter design. Eight named
+  tools, owner-bound quotes and spending controls do not establish an exception. Preserve the shared eight-tool
+  backend/accounting contract for other clients; a fixed-capability OpenAI adapter is not implemented or approved.
+- **Reviewer access:** the portal offers email-code sign-in, while the
+  [written submission requirements](https://developers.openai.com/plugins/deploy/submission#complete-review-information)
+  require a dedicated sample-data account that works without email/SMS codes, magic links or MFA approvals.
+  Support has not confirmed that option as an exception or confirmed first-time account initialization. Ordinary
+  customer OAuth continues to reuse the website's Google/email-code login. No password feature, special bypass,
+  personal customer credentials or session tokens are authorized. The optional profile tool is not a prerequisite
+  for this login; do not add a ninth tool merely for authentication.
+- **Existing-wallet eligibility:** current [commerce guidance](https://developers.openai.com/plugins/plugin-guidelines#commerce-and-monetization)
+  permits existing subscription entitlements but prohibits digital credit/service sales and indirect upsells.
+  Existing prepaid-wallet deductions have no confirmed exception. Review the shared errors, OpenAI skills,
+  test-case copy and price widget that say “Top up in Superlurk”; plain text without checkout links is not an
+  established exemption. Do not change billing or declare this model accepted without the required decision.
+
+## Qualify the submitted release
+
+The shared ChatGPT/Codex identity contains one MCP server and four skills. The five positive and three negative
+cases in `plugin.json → extensions.com.openai.review.test_cases` describe expected behavior, not completed tests.
+Run each case from a clean actual client against the final pinned release and retain sanitized evidence. The
+saved-comment follow-up case needs an owned YouTube comment result with an eligible Replies item; prepare it
+through the ordinary quoted path within the exact approved allowance rather than inventing provider context.
 
 Before submission:
 
-- Reconcile the source package, deployed API/catalog and the artifacts' hashes/versions. Finish
-  real install, sign-in, quote/run, saved-result, bulk, follow-up, load-more/refresh, restart,
-  access-token refresh, isolation and revocation checks on every supported client surface.
-- Validate `https://mcp.superlurk.com/mcp`, its resource metadata and authorization issuer over
-  public HTTPS. Confirm actual ChatGPT/Codex callback and CIMD/DCR behavior. Use browser sign-in;
-  no credential or bearer token belongs in this package.
-- Resolve the documented upstream MCP-schema/OpenAI-extension mismatch in portal scanning and
-  retain the finding/decision. Local projected-schema success is not portal acceptance.
-- Verify the publisher identity and the existing website, contact, privacy and terms URLs in
-  `interface`. Review the AI-integration data categories, purposes, retention, revocation and
-  provider disclosures against actual behavior. Complete the required policy attestations.
-- Build the Midnight Studio refresh and commit its exact templates. Read deployed content-hashed resource URIs
-  and full HTML hashes back, refresh client metadata and start a new conversation. Verify 20 layouts and 25 network
-  labels, narrow/light/dark rendering, keyboard access, links, restored state and interrupted actions in real hosts;
-  synthetic checks remain separate evidence.
-- Check both CSP conventions and the configured OpenAI widget origin. Fetch/connect lists stay empty; only price/results
-  may load images from the signed first-party `https://img.superlurk.com` relay. Balance keeps an empty resource
-  list. Do not add provider domains or wildcards. Validate `MCP_WIDGET_DOMAIN=https://superlurk.com` through
-  `openai/widgetDomain` in deployed resource-list and resource-read metadata. The shared server does not inject
-  standard `ui.domain`, whose format is host-specific; other MCP Apps hosts choose their own sandbox origin.
-  Confirm the nested standard UI metadata and both CSP conventions remain present. Earlier proposals for a
-  separate widget subdomain are historical notes, not deployment proof.
-- Provide the portal's exact domain-verification challenge at its prescribed URL without
-  overwriting another plugin's challenge. Keep domain-verification values out of the package.
-- Prepare the fully featured reviewer account and representative sample data with enough
-  existing credits. Enter its access information only through the secure portal form. Do not
-  add `test_credentials` or `reviewer_instructions` to the ZIP.
-  **Blocked:** the current Superlurk UI offers Google and email-code sign-in, with no password
-  form. A reviewer email/password alone is not usable through it. Qualify an accepted reviewer
-  access method that needs no email/SMS code, magic link or MFA approval before submission;
-  this rollout does not introduce that method. See [reviewer-access requirements](https://developers.openai.com/plugins/deploy/submission#complete-review-information).
-- Record a reviewer-accessible real walkthrough after acceptance. **No demo recording URL
-  exists in this package.** Set `review.demo_recording_url` only when a usable recording exists,
-  then rebuild and revalidate the versioned artifact. Do not use a placeholder URL.
-- Upload the reviewed ZIP, inspect all imported fields and MCP connection findings, and finish
-  required scans. Submit only after those gates pass. After approval, publication is a separate
-  owner action. Do not represent review readiness as directory approval.
+- Reconcile the source, schema, catalog, capability state, deployed API/worker/scheduler and artifact versions and
+  hashes. The initial `400ea6a7` API clock rollout and `r0036` catalog alignment passed, including authenticated
+  exhaustive discovery and a strict 16-sample/900-second watch. The later 0.3.6/widget/0061 source candidate still
+  requires its own production and client readbacks. Preserve historical receipts at their original source and time.
+- Complete real install, sign-in, quote/decline/approve/run/poll, saved-result reuse, bulk, follow-up,
+  continuation/refresh, export, restart, token refresh, isolation, revocation and package lifecycle checks for every
+  retained client surface. Public Codex 0.3.5 installation and bounded CLI balance/results reads are supporting
+  evidence, not full desktop/IDE/ChatGPT acceptance. Native-device gaps remain blockers under the retained scope.
+- Validate `https://mcp.superlurk.com/mcp`, its eight tool definitions, resource metadata, authorization issuer,
+  callback and CIMD/DCR behavior over public HTTPS. Reconnect through browser login where required. No credential
+  or bearer token belongs in the package. New connections have no daily-cap selector/default cap; legacy capped
+  grants retain their existing limits.
+- Re-run the actual portal MCP scan against the final deployment and inspect each tool's live/held findings,
+  including the upstream MCP-schema/OpenAI-extension mismatch. Earlier scans and local projected-schema checks
+  do not establish current portal acceptance.
+- Check the verified publisher's website, contact, privacy and terms URLs in `interface`. Review actual data
+  categories, purposes, retention, deletion/revocation, provider authorization and disclosures before attestation.
+- Verify the exact built and shipped Midnight Studio template hashes and content-hashed resource URIs, refresh
+  host metadata and start a new conversation. Exercise 20 layouts and 25 network labels, safe images/links,
+  spacing/columns/buttons, narrow/light/dark, keyboard/accessibility, table/fullscreen, restored state,
+  quote expiry, repeated clicks and interrupted/partial-bulk/error cases in actual hosts. Test MCP Apps and the
+  OpenAI bridge separately, retaining complete text/structured fallback. Synthetic renders remain separate evidence.
+- Check both CSP conventions and the OpenAI widget origin. Fetch/connect lists stay empty; price/results may load
+  images only through the signed first-party `https://img.superlurk.com` relay. Balance keeps an empty resource
+  list. Do not add provider domains or wildcards. Read back `MCP_WIDGET_DOMAIN=https://superlurk.com` through
+  `openai/widgetDomain`. The shared server does not inject host-specific standard `ui.domain`. Confirm nested
+  standard UI metadata and both CSP conventions. Earlier separate-widget-subdomain proposals are historical.
+- Preserve the existing domain-verification challenge. If a new one is required, use the exact prescribed origin
+  and value without overwriting another plugin's challenge. Keep challenge values outside the package.
+- Qualify reviewer access once its supported route is confirmed. The dedicated reviewer Auth identity is prepared;
+  ordinary first sign-in/product initialization, a populated sample-only account, usable access and allowance
+  remain unqualified. Enter accepted access information only in the secure portal review fields, never in the ZIP
+  or chat. Do not share a real customer account or fabricate an ordinary first login.
+- Record the real ChatGPT test cases and functionality with an accessible video walkthrough. **No demo recording URL is established.** Set `review.demo_recording_url` only when it exists, then rebuild/revalidate
+  the versioned artifact. Personal 0.3.2, Copilot screenshots and synthetic renders do not establish this journey.
+- Inspect all imported 0.3.5 fields, package checks and final MCP findings. Complete accurate review details,
+  five actual positives, three negatives, screenshots and release notes. Submit only after retained claims pass
+  or the owner explicitly changes scope. Review new binding agreements with the owner at the time of acceptance.
+  Approval, publication and public-directory installation verification are later distinct stages.
 
-The full-catalog paid preflight must be regenerated with authored contextual dependencies and current
-source/catalog/deployment bindings before approval of credit and provider-dollar ceilings. Historical campaign
-totals are not current approval. A second independent QA identity is still needed for isolation checks; a
-same-account paid example or fixture coverage is not full-catalog acceptance.
+## Budget and final declarations
 
-Country targeting and translations are omitted rather than guessed. Confirm any intended
-publication targeting in the portal before publishing. `review.commerce` is false: nothing is
-sold in the plugin. Existing credits are consumed only after a quote and authorization, and
-low balance says “Top up in Superlurk” without a purchase link. Retain the platform's review
-decision about this credit model with the submission receipt.
+The distinct second QA identity has been supplied; account-isolation evidence must remain tied to the tested
+release. A separate source-bound **743-operation QA packet has been approved**, with allocation and paid
+execution awaiting qualified runtime, account, provider and guard prerequisites. The two-operation reviewer
+allowance is a separate bounded approval. This public package contains no private test manifest, credentials,
+credit-allocation authority or execution token. The private operator ledger holds the exact approved operations,
+ceilings and settlement evidence; this document neither expands those permissions nor creates account credits.
+Only the operations and attempts explicitly covered by the current approval may run. Additional retries,
+refreshes, continuations, replacements or top-ups require covered authorization. Historical totals, authored
+reservations and fixture success are not execution approval or full-catalog acceptance.
+
+Country targeting and translations are omitted rather than guessed; confirm them in the portal before publication.
+`review.commerce: false` is the developer's declaration that no purchase flow exists, not a platform decision that
+wallet debits or indirect credit-purchase prompts comply. Retain the actual determination with the submission receipt.
 
 Reference: [OpenAI upload and submission guide](https://developers.openai.com/plugins/deploy/submission).

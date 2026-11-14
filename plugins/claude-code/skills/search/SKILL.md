@@ -19,9 +19,11 @@ and installing another plugin never creates a new allowance. Purchases stay on t
 
 Steps:
 
-1. Call `find_searches` with a `query` describing the kind of search (for example "tiktok videos about a
-   keyword"), and `network` or `goal` if the request names one. Pick the best match, or show the top two or
-   three with their credits if it is unclear.
+1. Call `find_searches` with short action words such as "search posts", "profile" or "comments", with
+   the known `network` passed separately. Omit filler such as "about a keyword". Start with `limit: 10`;
+   if no suitable action is shown, compare `total_matches` with the number shown and simplify the words
+   or broaden the filtered list up to 50, within the person's call limit. Do not substitute a feed for
+   keyword search. If the call limit prevents another lookup, explain that and ask for clarification.
 2. Fill the search's required inputs from the request and ask for anything missing.
 3. Check `list_results` for a recent saved result of the same search and offer it first; opening it is free.
 4. Call `get_price` with the topic, handle or link in the search's inputs. Show the search, the inputs, the
@@ -29,7 +31,11 @@ Steps:
    pass the offered `fix_ids`) and price again before going further. For several accounts, links or IDs on
    a search with a `bulk_field`, price them together with `items` (up to 50) and show items × credits, the
    total and the items left out.
-5. Ask "Run it for N credits?" and wait for a clear yes. For several searches, show an explicitly
+   Quote-only requests still need the returned changes, warnings and issues. If `credits.insufficient`
+   is returned, state the actual price and available balance and say the search cannot run; never give
+   only a bare price. A decline means stop after the quote without asking to run it again.
+5. If execution is wanted and has not been declined, ask "Run it for N credits?" and wait for a clear yes.
+   For several searches, show an explicitly
    enumerated batch with each search, inputs, price and the total; obtain approval for those exact quotes
    or a named subset. Do not call `run_search` for any unapproved quote.
 6. Call `run_search` with the confirmed `quote_id` and `wait_seconds: 25`; follow up with `get_run` if it is

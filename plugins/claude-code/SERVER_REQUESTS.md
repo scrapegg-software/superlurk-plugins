@@ -1,6 +1,6 @@
 # Claude Code plugin release dependencies
 
-Version 0.3.5 reuses the existing shared MCP server; no additional server or charging path is required.
+Source candidate 0.3.6 reuses the existing shared MCP server; no additional server or charging path is required.
 The current source catalog covers 25 networks; release tests check that count against the registry.
 The source and nested marketplaces now agree with plugin.json. Earlier server requests and November 6
 fixture observations remain available in Git history; their completion does not qualify a current release.

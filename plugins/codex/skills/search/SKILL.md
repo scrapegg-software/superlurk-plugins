@@ -20,6 +20,13 @@ query operators. Each network has its own inputs and capabilities.
    most 5 credits” authorizes that specific intended operation within the ceiling; it does not
    authorize other searches or unlimited retries. Honor already-given authorization.
 
+Quote-only requests need the same disclosures even when no run is planned: show the chosen search,
+its inputs, the returned price and delivery, and every nonempty `changes`, `warnings` or `issues`.
+Report the current `balance_left` when it prevents the run. In particular, `credits.insufficient`
+means say that the quoted search cannot run with the available credits; a bare price is incomplete.
+For example: "1 credit; 0 credits available, so it cannot run. Nothing spent." Use the actual values.
+When the person declines execution, stop after the quote without asking to run it again.
+
 A quote lasts five minutes. Changed inputs, bulk items, a new provider page, a refresh, expiry,
 or changed prices require another quote and approval unless the person's explicit authorization
 already covers that operation and price. A missing `quote_id`, null price, input issues, low
@@ -52,11 +59,14 @@ do not create a checkout or include a purchase link.
 
 ## Choose, price and run
 
-1. Use `find_searches` to describe the kind of search, such as “Reddit posts” or “TikTok profile”.
-   Put the person's topic, account or link into the returned input fields, not the discovery query.
-   Goals include find, accounts, talk, trends, business, live, places and tools. If no match is
-   found, broaden the words or filter by network and goal. Discovery returns at most 50 matches;
-   refine the question rather than treating that first list as the entire catalog.
+1. Use short action words in `find_searches.query`, such as "search posts", "profile" or "comments";
+   pass the known network separately. Discovery is a keyword filter, not a natural-language search:
+   omit filler such as "about a keyword", and put the person's topic, account or link into the
+   returned input fields. Goals include find, accounts, talk, trends, business, live, places and tools.
+   Start with `limit: 10`. Compare `total_matches` with the number shown: a truncated list is not the
+   entire catalog. If no suitable action is shown, simplify the words or request the known network
+   (and goal when clear) with `limit` up to 50, within the person's call limit. If that limit is exhausted, explain
+   the incomplete lookup and ask to refine it; do not substitute a feed or call the network unsupported.
 2. Read required fields, alternative required groups and field hints. Ask only for required
    information missing from the request or owned saved context. Use advertised picker choices,
    not invented IDs, cookies, provider cursors or tokens. Web-network links must belong to that

@@ -1,16 +1,17 @@
 # Superlurk for ChatGPT and Codex
 
-Version **0.3.5** bundles four workflows and the existing remote OAuth MCP connection in one
+Source candidate **0.3.6** bundles four workflows and the existing remote OAuth MCP connection in one
 portable Agent Plugins package. It uses the same account, catalog, balance and saved results as
-the Superlurk website. The public directory review and live acceptance checks are pending.
+the Superlurk website. The candidate strengthens quote-only warning/balance disclosure and discovery guidance. It is not published;
+current public manual-install artifacts and directory drafts remain 0.3.5. Full live acceptance is pending.
 The publisher is **Scrapegg Software Private Limited**; the product name remains **Superlurk**.
 
 ## Plugin-only distribution
 
 The dedicated distribution repository is [scrapegg-software/superlurk-plugins](https://github.com/scrapegg-software/superlurk-plugins).
-It is prepared separately from the private application repository. A repository URL is not evidence of public
-availability or directory approval; the repository can remain private during submission preparation.
-Once you can access its reviewed marketplace, install the shared identity in Codex with:
+Its reviewed public main `882e65ec6e202a5e8b9a9e0be01929795c6ade22` provides version 0.3.5 separately
+from the private application repository. The following commands install that published Git snapshot,
+not this unpublished 0.3.6 source candidate; Git availability is not directory approval:
 
 ```bash
 codex plugin marketplace add scrapegg-software/superlurk-plugins --json

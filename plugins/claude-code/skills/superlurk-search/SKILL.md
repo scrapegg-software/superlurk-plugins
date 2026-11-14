@@ -31,6 +31,13 @@ actual balance and keep purchases on the website.
 2. You showed the person the price in credits, plus any `changes`, `warnings` or `issues` the quote returned.
 3. The person said yes to **that** price in this conversation.
 
+Quote-only requests need the same disclosures even when no run is planned: show the chosen search,
+its inputs, the returned price and delivery, and every nonempty `changes`, `warnings` or `issues`.
+Report the current `balance_left` when it prevents the run. In particular, `credits.insufficient`
+means say that the quoted search cannot run with the available credits; a bare price is incomplete.
+For example: "1 credit; 0 credits available, so it cannot run. Nothing spent." Use the actual values.
+When the person declines execution, stop after the quote without asking to run it again.
+
 A "yes" covers one quote, or an explicitly enumerated batch of quotes with the inputs, individual
 prices and total shown together. For a batch, keep the exact approved quote IDs internally and run
 only those quotes, one at a time. A broad request to compare networks is not spending approval.
@@ -70,10 +77,13 @@ Every response reports `credits_spent` and `balance_left`. Mention them after a 
 
 ### 1. Choose a search
 
-* Call `find_searches` with a `query` that describes the **kind of search** ("tiktok videos about a keyword",
-  "instagram profile", "reddit comments"), plus `network` and `goal` when they are clear. The person's topic,
-  handle or link goes into the search's inputs later, not into this `query`. Keep `limit` small (5 to 10). If
-  nothing comes back, try fewer words, or only `network` and `goal`.
+* Use short action words in `find_searches.query`, such as "search posts", "profile" or "comments",
+  with the known `network` passed separately. The query is a keyword filter, so omit filler such as
+  "about a keyword". The person's topic, handle or link belongs in the returned input fields, not here.
+  Start with `limit: 10`. Compare `total_matches` with the number shown. If no suitable action is shown,
+  simplify the words or request the known network (and goal when clear) with `limit` up to 50, within the person's
+  call limit. A truncated list is not the entire catalog. If the limit is exhausted, explain that and ask
+  to refine the lookup; do not substitute a feed or describe the network as unsupported.
 * Pick the search whose "what it takes" and "what it returns" match the request. If two fit, show both
   with their `credits` and let the person choose.
 * Read the search's input fields. Fill required ones from the request. Ask for anything required that you
