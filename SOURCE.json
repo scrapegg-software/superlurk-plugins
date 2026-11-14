@@ -1,5 +1,5 @@
 {
-  "status": "PREPARED_0.3.7_MAIN_BOUND_PUBLIC_REVIEW_CANDIDATE",
+  "status": "PUBLIC_GIT_0.3.7_MANUALLY_AVAILABLE_DIRECTORY_DRAFTS_UNSUBMITTED_CLIENT_ACCEPTANCE_INCOMPLETE",
   "source_commit": "44e91610c48ce568c7bc17c5c8b95a45d7c5063a",
   "source_git_tree": "d7356127d05bc8ccec945d088dd64936dca1f809",
   "source_tree_sha256": "73d450423c1e4f50b3e5402cbee6035b66d4dbf55d1d0ac502d87565a466af24",
@@ -15,7 +15,7 @@
     ".agents/plugins/marketplace.json": "6e2b4840e74d7fe0eee60794c24f2a18dba64dd459ad31391adf081e06a87943",
     ".claude-plugin/marketplace.json": "5184505ef12ecba74e62b56ed846a83ef3257701859619b1a506959431c7532a",
     "LICENSE": "0c0b52c15d5b4829a6dbadeac1197e7752ed38973c7d35956e7f5f600008e6e8",
-    "README.md": "3096870a657c0b8010888f2674ccd407233c21a5be355b652592ab89bbbdca71",
+    "README.md": "f07f575548e48f14ebc4f9271cc0c1a9d2adc5be710183e9463594edc5968b56",
     "THIRD_PARTY_NOTICES.md": "9e9d4f4082bd4b8c3a8a5c73c5e65e7e4a933da6312add4265f727200d83d957",
     "plugins/claude-code/.claude-plugin/icon.png": "c981b0b239b6d4359df7cb3fe7f277cc4149efd3f6cbc18b4dc9f1878e30a6ae",
     "plugins/claude-code/.claude-plugin/marketplace.json": "6038b5c3288f9dfaa30ccb6c1b6269321bdbbbbd49dfa350842a6104b34133da",
@@ -61,19 +61,65 @@
       "source_sha256": "a90afba6b71be83c60033ae551b80242ef692c1f9f642a42b671125bc37e5e94",
       "public_sha256": "dbd7476f6ca6d76c3645825558217b9d0f8f521e941c1d3ea29c3b3c7d6a767f",
       "description": "Replace exactly three private-application-relative Markdown links with portable prose; historical facts unchanged."
+    },
+    "README.md": {
+      "public_baseline_sha256": "3096870a657c0b8010888f2674ccd407233c21a5be355b652592ab89bbbdca71",
+      "public_updated_sha256": "f07f575548e48f14ebc4f9271cc0c1a9d2adc5be710183e9463594edc5968b56",
+      "description": "Update manual public Git availability and retained directory/client acceptance status; no platform package payload changes."
     }
   },
   "runtime_payloads": "All8 Codex runtime and12 Claude package members remain byte-exact to this source; canonical OpenAI payload unchanged apart from public-only SUBMISSION prose.",
   "license": "MIT plugin files; unchanged vendored Apache2.0 schemas retain provenance and license; private application/source/data excluded.",
-  "publicly_published": false,
+  "publicly_published": true,
   "directory_submitted": false,
   "directory_approved": false,
   "complete_client_acceptance": false,
   "final_main_tree_equivalence": "VERIFIED_SAME_GIT_TREE_AND_SOURCE_DIGEST",
   "containing_public_commit": null,
-  "status_observed_at": "2026-11-14T17:04:18.062056+00:00",
-  "preparation_checkpoint": "Local preparation only. Publication flags are dated to this checkpoint; future public Git readbacks belong in a separate external receipt.",
+  "status_observed_at": "2026-11-14T18:45:16.898030+00:00",
   "source_package_origin_commit": "efa6e8196bcfb2402748544f9b8f9064b3b36249",
   "main_equivalence_receipt_sha256": "75ee020ebf3f8646d27923055bfb66a9acf0ce38f33cc0e611f14f31d7dada78",
-  "main_equivalence_evidence_scope": "External publisher-held read-only Git tree/source-digest comparison; no local filesystem paths or containing-public-commit selfreference."
+  "main_equivalence_evidence_scope": "Historical publisher-held read-only Git tree/source-digest comparison for source_commit44e91610c48ce568c7bc17c5c8b95a45d7c5063a. This does not assert a current backend deployment or private application HEAD.",
+  "status_as_of_date": "2026-11-15",
+  "status_date_timezone": "Asia/Kolkata",
+  "last_observed_public_git": {
+    "repository": "https://github.com/scrapegg-software/superlurk-plugins",
+    "ref": "main",
+    "commit": "165b9a5c346db43a3f347a100c188bec6f457a7e",
+    "tree": "a7949d61e67789246cd6e2b962fe69733ca23a0a",
+    "observed_at": "2026-11-14T18:42:18.068293+00:00",
+    "version": "0.3.7",
+    "scope": "Observed published baseline. This field does not identify the containing commit of this document."
+  },
+  "official_directory_status": {
+    "openai": {
+      "last_observed_draft_version": "0.3.6",
+      "submitted": false,
+      "approved": false,
+      "observation_scope": "Last retained directory draft observation; not refreshed by the public Git installation/static check."
+    },
+    "claude": {
+      "last_observed_draft_version": "0.3.6",
+      "submitted": false,
+      "approved": false,
+      "observation_scope": "Last retained directory draft observation; not refreshed by the public Git installation/static check."
+    }
+  },
+  "public_git_install_static_qualification": {
+    "status": "PASS",
+    "observed_at": "2026-11-14T18:42:18.068293+00:00",
+    "scope": "Fresh official-host public Git installation and static payload checks only.",
+    "codex_cli_version": "0.162.1",
+    "claude_code_version": "2.1.322",
+    "codex_source_exact_runtime_files": 8,
+    "claude_source_exact_runtime_files": 12,
+    "enabled_plugin_version": "0.3.7",
+    "skills_per_host": 4,
+    "MCP_declarations_per_host": 1,
+    "eight_authenticated_tool_definitions": "NOT_TESTED",
+    "model_mediated_skill_activation_and_host_UI": "NOT_TESTED",
+    "external_receipt_sha256": "b545fef893a2f6345adc481dc6304172a6f064a6392fef2ec9e1b67cf793226e"
+  },
+  "publication_checkpoint": "Manual public Git availability was observed against last_observed_public_git. Directory submission/approval and complete retained client acceptance are not established. No containing-public-commit self-reference is claimed.",
+  "public_git_stage": "PUBLIC_MANUAL_INSTALL_RELEASE_CANDIDATE"
 }
