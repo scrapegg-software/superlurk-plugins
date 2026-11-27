@@ -25,8 +25,9 @@ Do not automatically refresh old results. Check `can_refresh` or `can_load_more`
 person wants new data. Price those operations with `get_price(result_id=..., purpose="refresh")`
 or `purpose="load_more"`, disclose the price and wait for approval before `run_search`.
 Those calls must not include new-search inputs, bulk items or source references. Saved reopens
-are free; a new provider page or refresh may cost credits. A successful valid empty answer is
-chargeable; a failed search is free.
+are free; a new provider page or refresh may cost credits. A valid empty answer is free
+when it was paid for only with free credits, up to 5 a day, and is otherwise charged; a failed
+search is free.
 
 For a requested follow-up, use an item's `next_searches`. Copy its child search and ready
 inputs; if present, pass both `source_result_id` and `source_item_id` to `get_price`. Never

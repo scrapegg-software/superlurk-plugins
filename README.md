@@ -2,7 +2,10 @@
 
 This repository contains the Superlurk plugin files only. No access to the private application repository is required.
 
-As of 2026-11-15, version 0.3.7 is available as a manual-install release candidate from this public Git repository. The last observed public `main` commit was `165b9a5c346db43a3f347a100c188bec6f457a7e` (tree `a7949d61e67789246cd6e2b962fe69733ca23a0a`).
+As of 2026-11-27, version 0.3.9 is available as a manual-install release from this public Git repository. It was
+built from the private application repository's commit `44d59f67a3ee266ebf8e68276790dfc649ee8556` with its release
+tool; [SOURCE.json](./SOURCE.json) lists the SHA-256 of every file. Version 0.3.8 was prepared but never published
+here, so 0.3.9 carries its changes too.
 
 Install from the public repository:
 
@@ -19,11 +22,20 @@ The Codex marketplace selects `plugins/codex`, the generated transport compatibi
 
 Restart Codex, then run `codex mcp login superlurk`. In Claude Code, open `/mcp`, select `plugin:superlurk:superlurk`, and choose Authenticate. Sign in to your own Superlurk account in the browser; OpenAI or Claude account sign-in is separate. Never paste tokens in chat. Use either the plugin connection or a direct MCP connection in a test session, so tools are not duplicated.
 
-Fresh public Git installation and static checks passed with Codex CLI 0.162.1 and Claude Code 2.1.322. Both hosts reported an enabled 0.3.7 plugin; their installed payloads matched the published source, with four skills and one Superlurk MCP declaration each. These checks do not establish authenticated tool behavior, model-mediated skill activation, host UI behavior or complete retained client acceptance.
+What changed since 0.3.7:
 
-The last observed official OpenAI and Claude directory records were unsubmitted version 0.3.6 drafts that had not been approved. A newer directory submission or approval is not established. Native mobile/account access, live test budget, reviewer credentials and a complete walkthrough remain separate gates.
+- A search with no results is free when it was paid for only with free credits (such as trial credits), up to 5 a
+  day; otherwise it uses its quoted credits. This matches the Superlurk service and its terms since 27 November 2026.
+- The Claude Code skill says that Facebook, Quora, Snapchat, Steam, Trustpilot, Twitch and Letterboxd have native
+  data and keep their web searches, and that web-search results stay titles, links and snippets.
+- The eight tools, OAuth sign-in and charging from the connected Superlurk account are unchanged. Existing versioned
+  archives are unchanged.
 
-Version 0.3.7 keeps saved rows and whole links reachable through free reading pages, restores supported TikTok profile source URLs, reports settled search charges accurately, and bounds group status polling across mixed outcomes, rate limits and page lifecycle changes. The eight tools, OAuth and account charging are unchanged. Existing versioned archives are unchanged.
+Installing 0.3.9 from this repository has not yet been checked in Codex or Claude Code. The checks recorded for 0.3.7
+(Codex CLI 0.162.1 and Claude Code 2.1.322) do not carry over to it. The last observed official OpenAI and Claude
+directory records were unsubmitted drafts that had not been approved; a newer directory submission or approval is not
+established. Native mobile/account access, live test budget, reviewer credentials and a complete walkthrough remain
+separate gates.
 
 ## License
 

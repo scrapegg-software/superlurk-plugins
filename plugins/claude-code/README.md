@@ -1,17 +1,22 @@
 # Superlurk for Claude Code
 
+**0.3.9 — 27 November 2026:** this version synchronizes the canonical OpenAI package, its generated Codex projection and the Claude Code marketplaces at 0.3.9. It includes the 0.3.8 changes, prepared on 16 November but never published (the current Claude Code native-versus-web search guidance). It also says that a search with no results is free when it was paid for only with free credits, up to 5 a day, as the service does since 27 November 2026. It is published for manual installation from the public plugin-only repository; the existing directory drafts remain 0.3.7 and unsubmitted. Actual client acceptance is a separate gate. The current OpenAI design remains on hold; no adapter is included. The eight tools, OAuth/browser login and charging from the connected Superlurk account are unchanged.
+
 Find public posts, profiles, comments and trends across 25 networks through Superlurk's remote MCP server. Call `list_networks`
 for the current networks and supported searches. Web-source searches return public titles, links and snippets;
 they do not imply native engagement or profile coverage. The plugin shares your Superlurk account, credits,
 prices and saved results with the website.
 
-**Release status: Prepared 0.3.7 source metadata.** This candidate keeps saved rows and whole links reachable,
-restores supported TikTok profile source URLs, reports settled search charges accurately, and bounds group
-status reads across mixed terminal outcomes, rate limits and page lifecycle changes. The same eight tools,
-OAuth and charging path remain. Final source freeze, archives, rollout and client readbacks are pending.
-Public Git main `1b0eb25694bde497767367f85e4e7c58a6817e71` remains the 0.3.6 manual-install candidate.
-The existing Claude bundle scans that 0.3.6 source and is not submitted; optional MCP registration is not a
-universal bundle blocker. Local checks, real-client behavior and directory approval remain separate evidence.
+**Release status — 16 November 2026:** version **0.3.7** is available for manual installation from public Git
+main `c9c36333b430577ec9d6eb372cbe9e4ebfe3a10f`. The existing Claude and OpenAI 0.3.7 directory drafts
+remain unsubmitted and unpublished. This working source may differ from the public snapshot; changed package
+content still needs its own installation and client evidence.
+
+Saved-item reading pages, supported TikTok profile source URLs, settled-charge reporting and bounded group
+status reads remain part of the release. The same eight tools, OAuth and charging path remain. The r0039 widget
+rollout has partial actual-host evidence; complete widget and retained-client acceptance and the final
+customer-fix source freeze remain open. Optional MCP registration is not a universal bundle blocker.
+Local checks, real-client behavior and directory approval remain separate evidence.
 The publisher is **Scrapegg Software Private Limited**; **Superlurk** remains the product/plugin name.
 
 ## Install
@@ -44,11 +49,11 @@ Restart Claude Code or use `/reload-plugins` after installation. Check `claude p
 
 Release archives contain an integration-only marketplace. After extracting one, follow its included install
 instructions and add the extracted marketplace folder. Its contents do not require access to the application
-repository. Public Git manual distribution is available at the repository below; 0.3.7 publication and official
-directory approval remain separate pending steps.
+repository. Version 0.3.7 manual distribution is available at the public repository below; official directory
+submission, approval and publication remain pending.
 
 The dedicated [plugin-only distribution repository](https://github.com/scrapegg-software/superlurk-plugins)
-is separate from the private application repository. It is public and supplies the 0.3.6 manual-install candidate;
+is separate from the private application repository. It is public and supplies the 0.3.7 manual-install candidate;
 that availability does not establish an official directory listing or full retained-client acceptance. To use
 its reviewed marketplace:
 
@@ -112,7 +117,8 @@ Plain requests include “Compare this topic on TikTok, Reddit and X” or “Ex
 An approval covers one exact quote or an explicitly enumerated batch whose inputs, individual prices and total
 were shown. Changed inputs, prices or expired quotes require renewed approval. Bulk lookup of up to 50 values
 is one quote with one total. Saved-result reading is free; loading another provider page or refreshing is
-separately quoted. A failed item is free; valid empty results can be charged.
+separately quoted. A failed item is free. A valid empty result is free when it was paid for only with free credits
+(such as trial credits), up to 5 a day; otherwise it is charged.
 
 The skills instruct Claude to show prices and obtain approval. They do not pre-approve `run_search`.
 Actual tool permission prompts depend on your Claude Code settings; tool annotations do not enforce

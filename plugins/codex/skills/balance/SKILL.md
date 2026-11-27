@@ -29,8 +29,8 @@ Superlurk website. Every run still needs a usable quote and authorization.
 
 If credits are low, say “Top up in Superlurk” as plain text. Purchases happen only on the
 website; do not create checkout links, request payment details or attempt an upgrade. Failed
-searches and reusing the person's own saved results are free; successful valid empty answers
-are charged at their quoted price.
+searches and reusing the person's own saved results are free. A valid empty answer is free when
+it was paid for only with free credits, up to 5 a day; otherwise it is charged at its quoted price.
 
 If tools are unavailable, use the setup workflow. A 401 or `_meta["mcp/www_authenticate"]`
 means the person should reconnect through the client UI. Never ask them to paste a token,

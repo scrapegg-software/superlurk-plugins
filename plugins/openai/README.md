@@ -1,19 +1,25 @@
 # Superlurk for ChatGPT and Codex
 
-Prepared source candidate **0.3.7** bundles four workflows and the existing remote OAuth MCP connection in
-one portable Agent Plugins package. It uses the same account, catalog, balance and saved results as the website.
-It keeps saved rows and whole links reachable through free reading pages, restores supported TikTok profile
-source URLs, reports settled search charges accurately, and bounds group status reads across mixed terminal
-outcomes, rate limits and page lifecycle changes. The eight tools, OAuth and charging path are unchanged.
-Final source freeze, archives, deployment and client readbacks are pending; 0.3.7 is not publicly released or submitted.
+**0.3.9 — 27 November 2026:** this version synchronizes the canonical OpenAI package, its generated Codex projection and the Claude Code marketplaces at 0.3.9. It includes the 0.3.8 changes, prepared on 16 November but never published (the current Claude Code native-versus-web search guidance). It also says that a search with no results is free when it was paid for only with free credits, up to 5 a day, as the service does since 27 November 2026. It is published for manual installation from the public plugin-only repository; the existing directory drafts remain 0.3.7 and unsubmitted. Actual client acceptance is a separate gate. The current OpenAI design remains on hold; no adapter is included. The eight tools, OAuth/browser login and charging from the connected Superlurk account are unchanged.
+
+**Release status — 16 November 2026:** version **0.3.7** is available for manual installation from the public
+plugin-only repository at `c9c36333b430577ec9d6eb372cbe9e4ebfe3a10f`. The existing OpenAI and Claude 0.3.7
+directory drafts remain unsubmitted and unpublished. This working source and its hosted service are qualified
+separately from that public snapshot; complete retained-client acceptance is still pending.
+
+The package bundles four workflows and the existing remote OAuth MCP connection. It uses the same account,
+catalog, balance and saved results as the website. Saved-item reading pages, supported TikTok profile source
+URLs, settled-charge reporting and bounded group status reads remain part of the release. The eight tools,
+OAuth and charging path are unchanged. The r0039 widget rollout has partial actual-host evidence; full widget
+and client checks and the final customer-fix source freeze remain open.
 The publisher is **Scrapegg Software Private Limited**; the product name remains **Superlurk**.
 
 ## Plugin-only distribution
 
 The dedicated distribution repository is [scrapegg-software/superlurk-plugins](https://github.com/scrapegg-software/superlurk-plugins).
-Its reviewed public main `1b0eb25694bde497767367f85e4e7c58a6817e71` provides the 0.3.6 manual-install
+Its reviewed public main `c9c36333b430577ec9d6eb372cbe9e4ebfe3a10f` provides the 0.3.7 manual-install
 candidate separately from the private application repository. The following commands install that public Git
-snapshot. Git availability does not establish directory approval. The company OpenAI draft is 0.3.6, not
+snapshot. Git availability does not establish directory approval. The company OpenAI draft is 0.3.7, not
 submitted or published; final reviewer access, video, scan and policy decisions remain pending:
 
 ```bash
@@ -132,9 +138,9 @@ for the remaining public-release gates.
 
 ## Charging and limitations
 
-`run_search` is the sole spending tool and requires an exact quote and authorization. Successful
-valid empty answers are charged; provider/input failures and reusing your own saved results are
-free. New plugin connections default to no daily connection cap; the usable wallet balance still
+`run_search` is the sole spending tool and requires an exact quote and authorization. A valid empty
+answer is free when it was paid for only with free credits, up to 5 a day, and is otherwise
+charged; provider/input failures and reusing your own saved results are free. New plugin connections default to no daily connection cap; the usable wallet balance still
 limits spending. Existing connection caps remain enforced. Purchases stay on the website. The MCP
 tools cannot publish social posts, buy credits, create monitors, or invoke server exports.
 
