@@ -1,5 +1,23 @@
 # OpenAI submission status
 
+**0.3.9 — 27 November 2026:** this version synchronizes the canonical OpenAI package, its generated Codex projection and the Claude Code marketplaces at 0.3.9. It includes the 0.3.8 changes, prepared on 16 November but never published (the current Claude Code native-versus-web search guidance). It also says that a search with no results is free when it was paid for only with free credits, up to 5 a day, as the service does since 27 November 2026. It is published for manual installation from the public plugin-only repository; the existing directory drafts remain 0.3.7 and unsubmitted. Actual client acceptance is a separate gate. The current OpenAI design remains on hold; no adapter is included. The eight tools, OAuth/browser login and charging from the connected Superlurk account are unchanged.
+
+**Current checkpoint — 16 November 2026:** version 0.3.7 is manually available from public plugin-only main
+`c9c36333b430577ec9d6eb372cbe9e4ebfe3a10f` and uploaded to the existing OpenAI and Claude drafts. Neither
+directory listing is submitted or published. The database recovery migration is applied. The r0039 widget
+rollout has partial actual-host evidence; complete widget and retained-client acceptance remain open. A later
+customer fix is still being qualified, so final source pins, archives and deployment must be reconciled before
+further paid testing. Earlier source-bound allowances do not transfer automatically.
+
+OpenAI's operation-exposure, accepted reviewer-access and existing-wallet policy questions remain unresolved.
+The final five positive/three negative cases, real walkthrough URL, current MCP scan and complete review
+information remain required. No password feature, reviewer bypass or reduced client scope is selected.
+Detailed deployment and test receipts are retained in the private application repository and omitted from this
+package. Older preparation and compliance statements below retain their original dates.
+
+<details>
+<summary>Historical preparation, observations and submission guidance through 14 November 2026</summary>
+
 **0.3.7 status: Prepared source metadata.** Free saved-item reading pages keep saved rows, whole identities
 and links reachable; clients follow the returned `pages` and `page_size`. Supported TikTok profile source URLs
 are restored from validated public handles. Terminal `run_search` replies report the settled charge rather than
@@ -60,10 +78,10 @@ adds MIT licensing, preserves the upstream validation schemas' Apache 2.0 notice
 `882e65ec6e202a5e8b9a9e0be01929795c6ade22`. The application repository stays private. Package checks and
 business verification do not establish a completed client journey or review acceptance.
 
-The private application's 12 November production report
+The internal 12 November production report (private application repository; omitted from this package)
 records the earlier private 0.3.2 upload. Preserve it as historical ingestion evidence; it does not describe the
-current company draft or certify refreshed widgets. Current next steps and the dated source/deployment boundary
-are in the private application's release next steps and its dated coordination checkpoint.
+current company draft or certify refreshed widgets. Internal release-next-steps and dated coordination records
+retain the source/deployment boundary separately from this package.
 
 ## Resolve the OpenAI review gates
 
@@ -144,8 +162,8 @@ Before submission:
 
 The distinct second QA identity has been supplied; its isolation checks still need evidence tied to the tested
 release. The existing two-operation reviewer allowance remains **2 credits / USD 0.002 / two physical provider
-HTTP attempts**, unspent, limited to the exact Reddit standing-desks and YouTube comments cases described in
-the private application's release next steps. Rebind technical prerequisites before execution; it does not
+HTTP attempts**, unspent, limited to the exact Reddit standing-desks and YouTube comments cases in the internal
+release-next-steps record (private application repository; omitted from this package). Rebind technical prerequisites before execution; it does not
 approve a larger campaign, retries, refresh, continuation, replacement or top-up. Generate a complete final
 catalog/client preflight before seeking any larger credit/provider-dollar ceilings. Historical totals, authored
 reservations and fixture success are not execution approval or full-catalog acceptance.
@@ -155,5 +173,7 @@ Country targeting and translations are omitted rather than guessed; confirm them
 wallet debits or indirect credit-purchase prompts comply. Retain the actual determination with the submission receipt.
 
 Reference: [OpenAI upload and submission guide](https://developers.openai.com/plugins/deploy/submission).
+
+</details>
 
 </details>

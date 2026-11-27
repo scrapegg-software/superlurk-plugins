@@ -32,8 +32,9 @@ or changed prices require another quote and approval unless the person's explici
 already covers that operation and price. A missing `quote_id`, null price, input issues, low
 balance or cap refusal blocks a run. Do not interpret a null price as free.
 
-Successful searches, including valid empty answers, are charged at the quoted price. Failed
-searches are free. Reusing the person's own saved result, reading saved pages, discovery, prices,
+Successful searches are charged at the quoted price. A valid empty answer is free when it was
+paid for only with free credits (such as trial credits), up to 5 a day; any other valid empty
+answer is charged at the quoted price. Failed searches are free. Reusing the person's own saved result, reading saved pages, discovery, prices,
 polling and balance checks are free. A different person's cache does not make this account's
 search free. Every tool response reports `credits_spent` and `balance_left`; report them after
 running and use the terminal result rather than guessing settlement from an intermediate run.

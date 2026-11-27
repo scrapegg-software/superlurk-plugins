@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "superlurk",
-  "version": "0.3.7",
+  "version": "0.3.9",
   "description": "Research public social posts, accounts, comments and trends with Superlurk. Discover searches, review a quote, and browse your saved results.",
   "author": {
     "name": "Scrapegg Software Private Limited",
@@ -64,7 +64,7 @@
               "description": "Discover, price, approve and complete a native search",
               "prompt": "Find public Reddit posts about standing desks. Show the exact price first and wait for my approval before running.",
               "tools_triggered": "find_searches, get_price, run_search, get_run, open_result",
-              "expected_behavior": "Choose an available Reddit post search, disclose the quote and any input changes, and wait. After the reviewer confirms that quote, run it once, poll with get_run only if needed, and present the saved result with credits spent and balance left. A valid empty answer is chargeable; a failed search is free."
+              "expected_behavior": "Choose an available Reddit post search, disclose the quote and any input changes, and wait. After the reviewer confirms that quote, run it once, poll with get_run only if needed, and present the saved result with credits spent and balance left. A valid empty answer is free when it was paid for only with free credits, up to 5 a day, and is otherwise chargeable; a failed search is free."
             },
             {
               "description": "Find and reopen the connected account's saved results",
@@ -110,7 +110,7 @@
         "commerce_description": "The plugin sells nothing and processes no payments. Searches consume existing Superlurk credits after an exact quote and approval. Plans and top-ups remain on the Superlurk website; the plugin provides no purchase links."
       },
       "publication": {
-        "release_notes": "0.3.7 keeps saved rows and whole links reachable through free reading pages, restores source URLs for supported TikTok profiles, reports settled search charges accurately, and bounds group status polling across mixed outcomes, rate limits and page lifecycle changes. The same eight tools, OAuth sign-in and account charging remain."
+        "release_notes": "Maintenance release for the Superlurk plugin packages. Searches use your connected Superlurk account and show the credit quote before execution."
       }
     }
   }

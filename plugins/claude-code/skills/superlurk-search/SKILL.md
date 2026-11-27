@@ -1,15 +1,17 @@
 ---
 name: superlurk-search
-description: Search public posts, profiles, comments and trends on 25 networks, including TikTok, Instagram, YouTube, Reddit, X, LinkedIn, Bluesky, Facebook and Quora, through the Superlurk MCP server. Use when the person asks to find, compare, monitor or export social media content, or mentions Superlurk. Covers choosing a search, showing the credit price and getting confirmation before anything is spent, reading saved results, and exporting them to CSV.
+description: Search public posts, profiles, comments, reviews and trends on 25 networks, including TikTok, Instagram, YouTube, Reddit, X, LinkedIn, Bluesky, Facebook, Quora and Steam, through the Superlurk MCP server. Use when the person asks to find, compare, monitor or export social media content, or mentions Superlurk. Covers choosing a search, showing the credit price and getting confirmation before anything is spent, reading saved results, and exporting them to CSV.
 ---
 
 # Superlurk search
 
 Superlurk runs priced searches on public networks. Call `list_networks` for the current catalog.
 New searches use the person's Superlurk credits, with the same prices and balance as the web app. On the networks `list_networks`
-marks `source: "web"` (Facebook, Quora, Pinterest and others), results are public pages found by a web
-search: a title, link and snippet, without likes, views or follower counts. The tools come from the
-`superlurk` MCP server bundled with this plugin.
+marks `source: "web"` (Pinterest, Medium, Goodreads and others), results are public pages found by a web
+search: a title, link and snippet, without likes, views or follower counts. Facebook, Quora, Snapchat,
+Steam, Trustpilot, Twitch and Letterboxd have native data (posts, pages, profiles, reviews, games, films,
+streams and more) and keep their web searches too; a search whose `returns` says web pages gives the same
+title, link and snippet. The tools come from the `superlurk` MCP server bundled with this plugin.
 
 The person signs in to their own Superlurk account through the browser flow in `/mcp`; Claude
 account sign-in is separate. Never ask for pasted credentials. Every Superlurk plan can connect,
@@ -56,7 +58,8 @@ and a new yes.
 
 Reading is free: `list_networks`, `find_searches`, `get_price`, `get_run`, `list_results`,
 `open_result` and `get_balance` never spend credits. Reusing the person's own saved result is free, and
-a search that fails is free.
+a search that fails is free. A search with no results is free when it was paid for only with free
+credits (such as trial credits), up to 5 a day; otherwise it uses its quoted credits.
 
 ## Tools
 
